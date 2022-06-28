@@ -10,20 +10,21 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>LCMH Courtage &mdash; Le Choix d'un Meilleur Horizon</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
-	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="description" content="LCMH Courtage - Le Choix d'un Meilleur Horizon" />
+	<meta name="keywords" content="lcmh courtage assurances choix meilleur horizon" />
 	<meta name="author" content="FreeHTML5.co" />
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+    <meta property="og:type" content="business.business">
+    <meta property="og:title"
+        content="Découvrez les produits de LCMH Courtage Antibes. En ligne ou par téléphone ☎">
+    <meta property="og:description" content="LCMH Courtage">
+    <meta property="og:url" content="https://lcmh.eu/">
+    <!-- <meta property="og:image" content="https://lcmh.eu.eu/assets/img/logo-squared.png"> -->
+    <meta property="business:contact_data:street_address" content="644 Chemin du Puy">
+    <meta property="business:contact_data:locality" content="Antibes">
+    <meta property="business:contact_data:region" content="PACA">
+    <meta property="business:contact_data:postal_code" content="06600">
+    <meta property="business:contact_data:country_name" content="France">
 
 	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400, 900" rel="stylesheet"> -->
 	
@@ -37,13 +38,11 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Flexslider -->
-	<link rel="stylesheet" href="css/flexslider.css">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
+	<!-- Cloudflare icons  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -62,7 +61,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-2 col-xs-12">
-					<div id="gtco-logo"><a href="index.html"><em>LCMH</em></a></div>
+					<div id="gtco-logo">
+						<!-- <a href="index.html"><em>LCMH</em></a> -->
+						<img src="images/logo.svg" height="40" width="40"/>
+					</div>
 				</div>
 				<div class="col-xs-10 text-right menu-1 main-nav">
 					<ul>
@@ -249,21 +251,40 @@
 			</div>
 			<div class="row">
 				<div class="col-md-6 col-md-push-6 animate-box">
-					<form action="https://formspree.io/f/xyyoaljj" method="POST">
-						<div class="form-group">
-							<label for="name" class="sr-only">Name</label>
-							<input type="text" class="form-control" placeholder="Name" id="name">
+					<form action="https://formspree.io/f/meqnwvba" method="POST" id="contactForm" name="sentMessage" novalidate="novalidate">
+						<div class="control-group">
+							<div class="form-group">
+								<label for="name" class="sr-only">Nom</label>
+								<input type="text" class="form-control" placeholder="Nom" id="name" required="required">
+								<p class="help-block text-danger"></p>
+							</div>
 						</div>
-						<div class="form-group">
-							<label for="email" class="sr-only">Email</label>
-							<input type="text" class="form-control" placeholder="Email" id="email">
+						<div class="control-group">
+							<div class="form-group">
+								<label for="email" class="sr-only">Email</label>
+								<input type="email" class="form-control" placeholder="Email" id="email" required="required">
+								<p class="help-block text-danger"></p>
+							</div>
 						</div>
-						<div class="form-group">
-							<label for="message" class="sr-only">Message</label>
-							<textarea name="message" id="message" class="form-control" cols="30" rows="7" placeholder="Message"></textarea>
+						<div class="control-group">
+							<div class="form-group">
+								<label for="phone" class="sr-only">Numéro de téléphone</label>
+								<input type="tel" class="form-control" placeholder="Numéro de téléphone" id="phone" required="required">
+								<p class="help-block text-danger"></p>
+							</div>
 						</div>
-						<div class="form-group" id="sendMessageButton">
-							<input type="submit" value="Send Message" class="btn btn-primary">
+						<div class="control-group">
+							<div class="form-group">
+								<label for="message" class="sr-only">Message</label>
+								<textarea name="message" id="message" class="form-control" cols="30" rows="7" placeholder="Message" required="required"></textarea>
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+
+						<div id="success"></div>
+
+						<div class="form-group">
+							<input type="submit" value="Envoyer" class="btn btn-primary"  id="sendMessageButton">
 						</div>
 					</form>
 				</div>
@@ -304,10 +325,10 @@
 		</div>
 	</footer>
 	</div>
-
+<!-- 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-	</div>
+	</div> -->
 	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
@@ -330,10 +351,32 @@
 <script>
   /* paste this line in verbatim */
   window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+
+  function defaultOnSubmit(data, setStatus, spinner) {
+    setStatus(spinner);
+    return data;
+  };
+  function defaultOnResponse(ok, setStatus, response) {
+    if (ok) {
+      setStatus("Merci d'avoir pris contact. JE vous recontacte au plus vite!");
+    } else {
+      try {
+        setStatus(response.data.error);
+      } catch {
+        setStatus("Oops, there was an error!");
+      }
+    }
+  };
   /* customize formbutton below*/     
   formbutton("create", {
-    action: "https://formspree.io/f/xyyoaljj",
-    title: "How can we help?",
+    action: "https://formspree.io/f/meqnwvba",
+	buttonImg: "<i class='fas fa-comment' style='font-size:24px'/>",
+    title: "Comment puis-je vous aider ?",
+    description: "Prenons contact, laissez moi vos coordonnées afin que je vous recontacte!",
+	theme: "classic",
+	onSubmit: defaultOnSubmit,
+	onResponse: defaultOnResponse,
+
     fields: [
       { 
         type: "email", 
@@ -342,20 +385,26 @@
         required: true,
         placeholder: "your@email.com"
       },
-      {
+	  {
+        type: "tel",
+        label: "Numéro de téléphone:",
+        name: "phone",
+        placeholder: "Numéro de téléphone",
+      },
+	  {
         type: "textarea",
         label: "Message:",
         name: "message",
-        placeholder: "What's on your mind?",
+        placeholder: "Message",
       },
-      { type: "submit" }      
+      { type: "submit", value: "Envoyer" }      
     ],
     styles: {
       title: {
-        backgroundColor: "gray"
+        backgroundColor: "#511313"
       },
       button: {
-        backgroundColor: "gray"
+        backgroundColor: "#511313"
       }
     }
   });
