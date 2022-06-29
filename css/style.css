@@ -230,7 +230,7 @@ h1, h2, h3, h4, h5, h6, figure {
   border-radius: 30px;
 }
 .gtco-nav ul li.btn-cta a:hover span {
-  background: #8bde2f;
+  background: #511313;
   color: #fff;
 }
 .gtco-nav ul li.active > a {
@@ -864,7 +864,7 @@ form label {
   position: fixed;
   z-index: 1901;
   width: 270px;
-  background: black;
+  background: #FFF3E0;
   top: 0;
   right: 0;
   top: 0;
@@ -894,10 +894,10 @@ form label {
   transform: translateX(0px);
 }
 #gtco-offcanvas a {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(81,19,19, 0.5);
 }
 #gtco-offcanvas a:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(81,19,19, 0.8);
 }
 #gtco-offcanvas ul {
   padding: 0;
@@ -931,7 +931,7 @@ form label {
   -moz-osx-font-smoothing: grayscale;
   content: "\e921";
   font-size: 20px;
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(81,19,19, 0.2);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -1121,8 +1121,8 @@ form label {
   border: 2px solid #511313 !important;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #8bde2f !important;
-  border-color: #8bde2f !important;
+  background: #511313 !important;
+  border-color: #511313 !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
